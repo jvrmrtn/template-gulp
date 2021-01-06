@@ -67,6 +67,6 @@ gulp.task('clean', () =>
 
 gulp.task('default', () => {
   gulp.watch('./src/js/*.js', gulp.series('babel'));
-  gulp.watch('./src/scss/*.scss', gulp.series('sass'));
+  gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
   gulp.watch('./src/views/**/*.pug', gulp.series('views'));
 });
